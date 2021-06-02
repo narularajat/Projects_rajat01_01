@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Network</title>
+<style>
+.btn-group button{
+background-color:
+#4CAF50;
+border: 1px solid green; 
+color: white;
+padding:10px 24px;
+cursor: pointer;
+float:left;
+}
+.btn-group button:not(:last-child){
+border-right:none;
+}
+.btn-group:after{content:"";
+}
+clear:both;
+display:table;
+}
+.btn-group button:hover{
+background-color:#3e8e41;
+}
+.dropbtn{
+background-color:#daa520;
+color:black;
+padding:16px;
+font-size:16px;
+bordere:none;
+cursor:pointer;
+}
+.dropdown{
+postion:relative;
+display:inline-block;
+}
+.dropdown-content{
+display:none;
+position:absolute;
+background-color:#deb3b0;
+min-width:160px;
+padding:12px 16px;
+z-index:1;
+}
+.dropdown-content a{
+color:black;
+padding:12px 16px;
+text-decoration:none;
+display:block;}
+.dropdown-content a:hover{
+background-color:#f1f1f1}
+.dropdown:hover .dropdown-content{display:block;}
+.dropdown:hover .dropbtn{background-color:#3e8e41;}
+body{
+background-image: url("anju2.jpg");
+}
+p.blocktext{
+margin-left:auto;
+margin-right:auto;
+width:8em
+}
+</style>
+</head>
+<body>
+<center>
+<h1> <font color="orange" size="10"> Mobile services</font> </h1>
+</center> <hr/>
+</style>
+</head>
+<body>
+
+
+<div class="dropdown">
+<button class="dropbtn">Data and Calls</button>
+<div class="dropdown-content">
+<a href="data.php">Data</a>
+<a href="call.php">Calls</a>
+</div>
+</div>
+
+
+</div>
+<div class="dropdown">
+<button class="dropbtn">TV</button>
+<div class="dropdown-content">
+<a href="tv.php">HD and NetTv</a>
+</div>
+</div>
+<div class="dropdown">
+<button class="dropbtn">Broadband</button>
+<div class="dropdown-content">
+<a href="wifi.php">Modem and Datacard</a>
+</div></div>
+<div class="dropdown">
+<button class="dropbtn">Logout</button>
+<div class="dropdown-content">
+<a href ="home.html">log out</a>
+</div>
+</div>
+</body>
+</html>

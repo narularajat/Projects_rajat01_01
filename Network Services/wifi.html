@@ -1,0 +1,174 @@
+<html>
+<head>
+<style>
+
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color:#896d93;
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left, #bcb3c5, #b295ae);
+  background: linear-gradient(to right, #bcb3c5, #b295ae);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+// '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+
+</style>
+</head>
+<body>
+<form action="inwifi.php" method="post">
+  <h1>Wifi Plans</h1>
+NAME <input type="text" name="nam">
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Amount</th>
+		  <th>confirm</th>
+          <th>Description</th>
+          </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td><input type="radio" name="name" value="401">500</td></td>
+		  <td><input type="radio" name="namee" value="500"></td>
+          <td>Modem-- 10 GB @45Mbps for 1 month </td>
+          
+        </tr>
+		        <tr>
+          <td><input type="radio" name="name" value="402">1000</td></td>
+		  <td><input type="radio" name="namee" value="1000"></td>
+          <td>Modem-- 20 GB @50Mbps for 1 month  </td>
+          
+        </tr>
+		        <tr>
+          <td><input type="radio" name="name" value="403">1200</td></td>
+		  <td><input type="radio" name="namee" value="1200"></td>
+          <td>Modem-- 30 GB @60Mbps for 1 month </td>
+          
+        </tr>
+		        <tr>
+          <td><input type="radio" name="name" value="404">1600</td></td>
+		  <td><input type="radio" name="namee" value="1600"></td>
+          <td>Modem-- 40 GB @80Mbps for 1 month</td>
+          
+        </tr>
+		        <tr>
+          <td><input type="radio" name="name" value="405">486</td></td>
+		  <td><input type="radio" name="namee" value="486"></td>
+          <td>Data card-- 10 GB @45Mbps for 1 month</td>
+          
+        </tr>
+		        <tr>
+          <td><input type="radio" name="name" value="406">978</td></td>
+		  <td><input type="radio" name="namee" value="978"></td>
+          <td>Data card-- 20 GB @50Mbps for 1 month</td>
+          
+        </tr>
+		        <tr>
+          <td><input type="radio" name="name" value="407">1130</td></td>
+		  <td><input type="radio" name="namee" value="1130"></td>
+          <td>Data card-- 30 GB @60Mbps for 1 month</td>
+          
+        </tr>
+		        <tr>
+          <td><input type="radio" name="name" value="408">1459</td></td>
+		  <td><input type="radio" name="namee" value="1459"></td>
+          <td>Data card-- 40 GB @80Mbps for 1 month</td>
+          
+        </tr>
+		 </tr>
+		       
+		<tr><td><center> <input type="submit" name="subm" value="submit"></center></td></tr>
+
+        
+      </tbody>
+
+	
+	
+	</table>
+	
+  </div>
+  
+
+
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
